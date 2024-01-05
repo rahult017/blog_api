@@ -41,7 +41,7 @@ class BlogRetrieveUpdateDeleteView(APIView):
         try:
             return Blog.objects.get(pk=pk)
         except Blog.DoesNotExist:
-            raise Response(status=status.HTTP_404_NOT_FOUND)
+            return Response(status=status.HTTP_404_NOT_FOUND)
 
     def get(self, request, pk, *args, **kwargs):
         blog = self.get_object(pk)
