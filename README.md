@@ -53,11 +53,53 @@ To understand how to utilize the API mentioned below, please refer to the tutori
 
 1.Blog Management
 
-    - /api/register/ (POST): Register a new user.
-    - /api/login/ (POST): Obtain a JWT token for authentication.
-    - /api/blogs/ (GET): Retrieve a list of all blog posts.
-    - /api/blogs/{id}/ (GET): Retrieve details of a specific blog post.
-    - /api/blogs/ (POST): Create a new blog post.
-    - /api/blogs/{id}/ (PUT): Update an existing blog post.
-    - /api/blogs/{id}/ (DELETE): Delete a blog post.
+    ```bash
+   1.Register a New User
+
+    Endpoint: /api/register/
+    Method: POST
+    Description: Register a new user by providing the necessary information.
+    Usage: Send a POST request with user registration data to create a new account.
+
+    2.Obtain JWT Token for Authentication
+
+    Endpoint: /api/login/
+    Method: POST
+    Description: Obtain a JSON Web Token (JWT) by providing valid credentials (username and password).
+    Usage: Send a POST request with user credentials to get an authentication token.
+    
+    3.Retrieve a List of All Blog Posts
+
+    Endpoint: /api/blogs/
+    Method: GET
+    Description: Retrieve a list of all blog posts.
+    Usage: Send a GET request to fetch a list of blog posts.
+    
+    4.Retrieve Details of a Specific Blog Post
+
+    Endpoint: /api/blogs/{id}/
+    Method: GET
+    Description: Retrieve detailed information about a specific blog post identified by its ID.
+    Usage: Send a GET request with the blog post ID to fetch specific details.
+    
+    5.Create a New Blog Post
+
+    Endpoint: /api/blogs/
+    Method: POST
+    Description: Create a new blog post by providing the necessary information.
+    Usage: Send a POST request with the data for the new blog post.
+
+    6.Update an Existing Blog Post
+
+    Endpoint: /api/blogs/{id}/
+    Method: PUT
+    Description: Update an existing blog post identified by its ID.
+    Usage: Send a PUT request with the updated data for the specified blog post.
+
+    7.Delete a Blog Post
+
+    Endpoint: /api/blogs/{id}/
+    Method: DELETE
+    Description: Delete a blog post identified by its ID.
+    Usage: Send a DELETE request to remove the specified blog post
 
