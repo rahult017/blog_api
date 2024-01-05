@@ -34,10 +34,17 @@ Prerequisite: *Python version 3.6 or higher is required.*
 
     python manage.py runserver
    
-3. Create Sample Data for project:
+5. Create Sample Data for project:
+
+    python manage.py create_sample_data 10 # create 10 record in database 
 
    
-$. Run test case :
+6. Run test case :
+
+    ```bash
+    python manage.py test blog.tests.test_views
+    python manage.py test blog.tests.test_serializers
+    python manage.py test blog.tests.test_models
     
    
 ## API Documentation.
